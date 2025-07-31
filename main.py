@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 print("Hello world")
 #i see the hello world now (josh) i have the pusedo code fuffly done.
 
