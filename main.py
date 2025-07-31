@@ -65,6 +65,119 @@ print("Hello world")
 
 #END
 
+# algorithm
+#BEGIN
+
+#1. Connect to SQLite database (school.db)
+#2. If tables (students, course, registration) do not exist:
+ #   CREATE students table (id, name, age, major)
+ #   CREATE course table (id, name, credits)
+ #   CREATE registration table (student_id, course_id)
+
+#3. Load JSON file if exists:
+#    FOR each student and course in JSON:
+#        INSERT or UPDATE student into students table
+ #       INSERT or UPDATE course into course table
+#        INSERT or UPDATE into registration table
+
+#4. LOOP until user exits:
+#    DISPLAY menu:
+#        1. Add new student
+#        2. Add new course
+#        3. View all students
+#        4. View all courses
+#        5. View all registrations
+#        6. Search student by ID
+#        7. Export data to JSON
+ #       8. Exit
+
+#    GET user choice
+
+#    IF choice == 1:
+#        PROMPT for student info
+#        INSERT student
+
+ #   ELSE IF choice == 2:
+ #       PROMPT for course info
+#        INSERT course
+
+ #   ELSE IF choice == 3:
+ #       SELECT * FROM students
+ #       DISPLAY results
+
+ #   ELSE IF choice == 4:
+ #       SELECT * FROM course
+ #       DISPLAY results
+
+ #   ELSE IF choice == 5:
+ #       SELECT * FROM registration
+ #       DISPLAY results
+
+ #   ELSE IF choice == 6:
+ #       PROMPT for student ID
+ #       SEARCH student by ID
+
+ #   ELSE IF choice == 7:
+ #       SELECT all tables' data
+ #       EXPORT to JSON file
+
+ #   ELSE IF choice == 8:
+  #      BREAK
+
+#END LOOP
+#DISCONNECT from database
+
+#END
+
+# algorithm
+
+#Start
+
+#Connect to SQLite and create school.db
+
+#Create tables:
+
+#students(id PRIMARY KEY, name TEXT, age INTEGER, major TEXT)
+
+#course(id PRIMARY KEY, name TEXT, credits INTEGER)
+
+#registration(student_id, course_id, FOREIGN KEYS)
+
+#If JSON data is available:
+
+#Load and parse JSON
+
+#Insert/update into tables accordingly
+
+#3Show menu for user options
+
+#Based on user selection, perform the respective database operation:
+
+##Add students or courses
+
+#View or search records
+
+#Export to JSON
+
+#Repeat until user exits
+
+##Close database connection
+
+#End
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import sqlite3
 import json
 
@@ -80,5 +193,4 @@ except:
 
 while True:
     break
-
 
