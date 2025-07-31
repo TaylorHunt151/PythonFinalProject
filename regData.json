@@ -1,0 +1,12 @@
+{
+"ECON 101" : {
+	"title" : "ECON 101",
+	"size" : "3",
+	"maxSize" : "10",
+	"students" : {
+		"1842631" : "Micheal Larsen",
+		"4562136" : "Jimmy Kimmel",
+		"8125436" : "Obama"
+		}
+	}
+}
