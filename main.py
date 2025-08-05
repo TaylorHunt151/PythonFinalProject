@@ -118,6 +118,7 @@ print("Hello world")
     #6. Search Student by ID
    # 7. Export to JSON
    # 8. Exit
+   # 9.help
    # ↓
 #[User selects an option]
   #  ↓
