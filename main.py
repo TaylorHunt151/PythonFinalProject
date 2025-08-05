@@ -25,7 +25,7 @@ print("Hello world")
 #        5. View all registrations
 #        6. Search student by ID
 #        7. Export data to JSON
- #       8. Exit
+#        8. Exit
 
 #    GET user choice
 
@@ -69,6 +69,10 @@ import sqlite3
 import json
 
 
+def addStudent:
+
+
+
 try:
     with open('regData.json', 'r') as file:
         data = json.load(file)
@@ -79,6 +83,13 @@ except:
     quit()
 
 while True:
-    break
+    choice = input("MENU\n1. Add new student\n2. Add new course\n3. View all students\n4. View all courses\n5. View all registrations\n6. Search student by ID\n7. Export data to JSON\n8. Exit\n")
+    try:
+        choice = int(choice)
+    except:
+        print("INVALID INPUT. INPUT MUST BE AN INTEGER.")
+    if choice == 8:
+        print("GOODBYE!")
+        break
 
 
