@@ -26,7 +26,7 @@ print("Hello world")
 #        6. Search student by ID
 #        7. Export data to JSON
 #        8. Exit
-
+#        9. help
 #    GET user choice
 
 #    IF choice == 1:
@@ -58,6 +58,10 @@ print("Hello world")
  #       EXPORT to JSON file
 
  #   ELSE IF choice == 8:
+ #       
+ #    else if choice == 9:
+ #       
+
   #      BREAK
 
 #END LOOP
@@ -65,12 +69,79 @@ print("Hello world")
 
 #END
 
+# algorithm
+
+#Start
+
+#Connect to SQLite and create school.db
+
+#Create tables:
+
+#students(id PRIMARY KEY, name TEXT, age INTEGER, major TEXT)
+
+#course(id PRIMARY KEY, name TEXT, credits INTEGER)
+
+#registration(student_id, course_id, FOREIGN KEYS)
+
+#If JSON data is available:
+
+#Load and parse JSON
+
+#Insert/update into tables accordingly
+
+#3Show menu for user options
+
+#Based on user selection, perform the respective database operation:
+
+##Add students or courses
+
+#View or search records
+
+#Export to JSON
+
+#Repeat until user exits
+
+##Close database connection
+
+#End
+# flow chart
+#Start Program
+  #  ↓
+#Read data from JSON file
+  #  ↓
+#Connect to school.db and create tables (if not exist)
+  #  ↓
+#Insert/Update JSON data into database
+  ###  ↓
+#Show Main Menu:
+   # 1. Add Student
+   # 2. Add Course
+   # 3. View All Students
+   # 4. View All Courses
+   # 5. View All Registrations
+    #6. Search Student by ID
+   # 7. Export to JSON
+   # 8. Exit
+   # 9. help
+   # ↓
+#[User selects an option]
+  #  ↓
+#Perform selected action
+  #  ↓
+#Return to Main Menu? → Yes → (back to menu)
+#                      ↓
+#                     No
+#                      ↓
+#Export to JSON (if selected)
+#    ↓
+#Close DB and Exit Program
+
+
+
+
+
 import sqlite3
 import json
-
-
-def addStudent:
-
 
 
 try:
@@ -83,13 +154,5 @@ except:
     quit()
 
 while True:
-    choice = input("MENU\n1. Add new student\n2. Add new course\n3. View all students\n4. View all courses\n5. View all registrations\n6. Search student by ID\n7. Export data to JSON\n8. Exit\n")
-    try:
-        choice = int(choice)
-    except:
-        print("INVALID INPUT. INPUT MUST BE AN INTEGER.")
-    if choice == 8:
-        print("GOODBYE!")
-        break
-
+    break
 
