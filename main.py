@@ -101,14 +101,35 @@ print("Hello world")
 
 #End
 
-
-
-
-
-
-
-
-
+#Start Program
+  #  ↓
+#Read data from JSON file
+  #  ↓
+#Connect to school.db and create tables (if not exist)
+  #  ↓
+#Insert/Update JSON data into database
+  ###  ↓
+#Show Main Menu:
+   # 1. Add Student
+   # 2. Add Course
+   # 3. View All Students
+   # 4. View All Courses
+   # 5. View All Registrations
+    #6. Search Student by ID
+   # 7. Export to JSON
+   # 8. Exit
+   # ↓
+#[User selects an option]
+  #  ↓
+#Perform selected action
+  #  ↓
+#Return to Main Menu? → Yes → (back to menu)
+#                      ↓
+#                     No
+#                      ↓
+#Export to JSON (if selected)
+#    ↓
+#Close DB and Exit Program
 
 
 
