@@ -1,6 +1,3 @@
-print("Hello world")
-#i see the hello world now (josh) i have the pusedo code fuffly done.
-
 #pusedo code
 ##BEGIN
 
@@ -58,9 +55,9 @@ print("Hello world")
  #       EXPORT to JSON file
 
  #   ELSE IF choice == 8:
- #       
+ #
  #    else if choice == 9:
- #       
+ #
 
   #      BREAK
 
@@ -144,6 +141,9 @@ import sqlite3
 import json
 
 
+def addStudent():
+    print("this isnt done yet")
+
 try:
     with open('regData.json', 'r') as file:
         data = json.load(file)
@@ -153,6 +153,20 @@ except:
     print("you suck at coding")
     quit()
 
+
 while True:
-    break
+    choice = input("MENU\n1. Add new student\n2. Add new course\n3. View all students\n4. View all courses\n5. View all registrations\n6. Search student by ID\n7. Export data to JSON\n8. Exit\n")
+    try:
+        choice = int(choice)
+    except:
+        print("INVALID INPUT. INPUT MUST BE AN INTEGER.")
+
+    if choice == 1:
+        addStudent()
+
+    elif choice == 8:
+        print("GOODBYE!")
+        break
+    else:
+        print("INVALID INPUT. INPUT MUST BE AN INTEGER.")
 
