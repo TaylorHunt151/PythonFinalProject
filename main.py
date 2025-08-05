@@ -25,8 +25,8 @@ print("Hello world")
 #        5. View all registrations
 #        6. Search student by ID
 #        7. Export data to JSON
- #       8. Exit
-
+#        8. Exit
+#        9. help
 #    GET user choice
 
 #    IF choice == 1:
@@ -118,7 +118,7 @@ print("Hello world")
     #6. Search Student by ID
    # 7. Export to JSON
    # 8. Exit
-   # 9.help
+   # 9. help
    # ↓
 #[User selects an option]
   #  ↓
